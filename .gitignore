@@ -1,0 +1,25 @@
+# macOS and temporary editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Local environment files and secrets at repository root
+/.env
+/.env.*
+!/.env.example
+/.secrets/
+
+# Build output at repository root
+/bin/
+/dist/
+/*.test
+/*.exe
+
+# Coverage and profiling output at repository root
+/coverage/
+/coverage*.out
+/coverage*.html
+/*.coverprofile
+/*.prof
+/*.pprof
