@@ -45,17 +45,18 @@ All packages belong to one module:
 github.com/muhammaadreza/gouse
 ```
 
-For a local checkout before publication, add these lines to your application's
-`go.mod`. Replace `../gouse` with the path to the repository root:
+From your application's Go module, add the `env` package:
 
-```go
-require github.com/muhammaadreza/gouse v0.0.0
-
-replace github.com/muhammaadreza/gouse => ../gouse
+```sh
+go get github.com/muhammaadreza/gouse/env@latest
 ```
 
 Import the package you need, such as `github.com/muhammaadreza/gouse/env`.
 Packages share one module version.
+
+Before the first version tag, `@latest` resolves to a pseudo-version identifying
+a commit on the repository's default branch. Once releases are tagged, it selects
+the latest available release.
 
 ## Packages
 

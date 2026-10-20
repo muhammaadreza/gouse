@@ -17,14 +17,15 @@ Requires Go **1.26.0** or later. The package import is
 `github.com/muhammaadreza/gouse/env`; its module is
 `github.com/muhammaadreza/gouse`.
 
-For a local checkout before publication, add these lines to your application's
-`go.mod`. Replace `../gouse` with the path to the repository root:
+From your application's Go module, run:
 
-```go
-require github.com/muhammaadreza/gouse v0.0.0
-
-replace github.com/muhammaadreza/gouse => ../gouse
+```sh
+go get github.com/muhammaadreza/gouse/env@latest
 ```
+
+Before the first version tag, `@latest` resolves to a pseudo-version identifying
+a commit on the repository's default branch. Once releases are tagged, it selects
+the latest available release.
 
 ## Quick start
 
