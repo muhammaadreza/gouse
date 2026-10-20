@@ -5,7 +5,7 @@ Focused Go utilities with explicit APIs and predictable behavior.
 [Quick start](#quick-start) · [Installation](#installation) ·
 [Packages](#packages) · [Documentation](#documentation)
 
-Go **1.27.1+** · Standard library only
+Go **1.26.0+** · Standard library only
 
 ## Quick start
 

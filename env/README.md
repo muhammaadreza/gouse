@@ -13,7 +13,7 @@ succeed. Only the explicit Export API changes process environment.
 
 ## Installation
 
-Requires Go **1.27.1** or later. The package import is
+Requires Go **1.26.0** or later. The package import is
 `github.com/muhammaadreza/gouse/env`; its module is
 `github.com/muhammaadreza/gouse`.
 
