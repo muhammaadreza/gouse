@@ -23,9 +23,12 @@ From your application's Go module, run:
 go get github.com/muhammaadreza/gouse/env@latest
 ```
 
-Before the first version tag, `@latest` resolves to a pseudo-version identifying
-a commit on the repository's default branch. Once releases are tagged, it selects
-the latest available release.
+`@latest` selects the latest release. To install a specific release instead,
+pin its version:
+
+```sh
+go get github.com/muhammaadreza/gouse/env@v0.1.0
+```
 
 ## Quick start
 

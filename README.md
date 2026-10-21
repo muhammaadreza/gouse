@@ -12,11 +12,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/muhammaadreza/gouse/releases"><img src="https://img.shields.io/badge/release-no%20releases-lightgrey" alt="Release status: no releases"></a>
-  <a href="go.mod"><img src="assets/branding/go-version.svg" alt="Minimum Go version: 1.26.0"></a>
-  <a href="https://github.com/muhammaadreza/gouse/actions/workflows/ci.yml"><img src="https://github.com/muhammaadreza/gouse/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI status on main"></a>
-  <a href="LICENSE"><img src="assets/branding/license.svg" alt="Code license: MIT"></a>
-  <a href="https://pkg.go.dev/github.com/muhammaadreza/gouse/env"><img src="assets/branding/docs.svg" alt="Documentation: pkg.go.dev"></a>
+  <a href="https://github.com/muhammaadreza/gouse/releases/latest"><img src="https://img.shields.io/github/v/release/muhammaadreza/gouse?label=release&amp;style=flat" alt="Latest GitHub release"></a>
+  <a href="go.mod"><img src="https://img.shields.io/github/go-mod/go-version/muhammaadreza/gouse?label=Go&amp;style=flat&amp;color=00add8" alt="Minimum Go version"></a>
+  <a href="https://github.com/muhammaadreza/gouse/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/muhammaadreza/gouse/ci.yml?branch=main&amp;label=CI&amp;style=flat" alt="CI status on main"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/muhammaadreza/gouse?label=license&amp;style=flat&amp;color=f4c542" alt="Code license"></a>
+  <a href="https://pkg.go.dev/github.com/muhammaadreza/gouse/env"><img src="https://img.shields.io/badge/docs-pkg.go.dev-007d9c?style=flat" alt="Documentation: pkg.go.dev"></a>
 </p>
 
 <p align="center">
@@ -38,9 +38,12 @@ go get github.com/muhammaadreza/gouse/env@latest
 Import the package as `github.com/muhammaadreza/gouse/env`. All packages belong
 to the single module `github.com/muhammaadreza/gouse` and share one version.
 
-Before the first version tag, `@latest` resolves to a pseudo-version identifying
-a commit on the repository's default branch. Once releases are tagged, it selects
-the latest available release.
+`@latest` selects the latest release. To install a specific release instead,
+pin its version:
+
+```sh
+go get github.com/muhammaadreza/gouse/env@v0.1.0
+```
 
 ## Quick start
 
